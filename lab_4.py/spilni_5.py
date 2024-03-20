@@ -1,7 +1,8 @@
-initial_motorcycles = 1 
-weeks = 2 
-final_motorcycles = initial_motorcycles * (2 ** weeks)
-
-left_without_motorcycles = final_motorcycles - initial_motorcycles
-
-print("Кількість онуків без мотоциклів через", weeks, "тижні:", left_without_motorcycles)
+from math import ceil
+k=int(input("ВВедіть кількість комп'ютерів в аудиторі?"))
+kil=1
+for days in range(14):
+    kil = kil*2
+aud = ceil(kil/k)   
+print(f"Через два тижні без мотоциклів буде {kil} онуків")
+print(f"В закладі освіти повинно бути {aud} компютерних аудиторій")
