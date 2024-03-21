@@ -13,7 +13,6 @@ for color_pen in ["green", "blue", "red", "yellow", "dark slate blue", "orange r
     t.color(color_pen, color_pen)
     r = 10
 
-    
     for a in range(4):
         t.down
         r += 10
@@ -26,16 +25,12 @@ for color_pen in ["green", "blue", "red", "yellow", "dark slate blue", "orange r
             x = x + 10
         
        
-        y = r*-0.5
+        y = r*-0.6
         t.up()
         t.setpos(x,y)
         t.down()
         t.up()
 
-        
-     
-            
-    
     t.goto(0,0)
     t.rt(alpha)
     
