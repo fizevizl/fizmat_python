@@ -6,35 +6,35 @@ class Worker:
 
     def __str__(self) -> str:
         return f"{self.name}, {self.age} {self.salary}"
-    
+
     def setName(self, name):
         self.name = name
 
     def getName(self):
         return self.name
-    
+
     def setAge(self, age):
         self.age = age
 
     def getAge(self):
         return self.age
-    
+
     def setSalary(self, salary):
         self.salary = salary
 
     def getSalary(self):
         return self.salary
-    
-    
+
+
 w1 = Worker()
 w2 = Worker()
 
 w1.setName("Іван")
-w1.setAge(26)
+w1.setAge(34)
 w1.setSalary(1000)
 
 w2.setName("Вася")
-w2.setAge(25)
+w2.setAge(34)
 w2.setSalary(2000)
 
 print(w1.getAge() + w2.getAge())
