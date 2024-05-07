@@ -1,6 +1,7 @@
 import os
 
-path =  os.path.dirname(os.path.realpath(__file__)) + "/"
+path =  os.path.dirname(os.path.realpath(__file__))
+path = f"{path}/files/"
 
 
 with open(f"{path}t.txt", "r") as file_in:
