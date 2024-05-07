@@ -3,7 +3,30 @@
 
 import math 
 
-a = input(int("введіть перше число : "))
-b = input(int("введіть друге число : "))
+class Nsk:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-print(math.gcd(a, b))
+    def find_nsk(self):
+        return math.lcm(self.x, self.y)
+ 
+a, b, c, d = (10, 4, 7, 9)
+
+# variant 1
+# obj = Nsk(a, b)
+# res = obj.find_nsk()
+# print(res)
+
+# obj1 = Nsk(res, c)
+# res = obj1.find_nsk()
+# print(res)
+
+# obj2 = Nsk(res, d)
+# res = obj2.find_nsk()
+# print(res)
+
+
+# variant 2
+print(Nsk(Nsk(Nsk(a, b).find_nsk(), c).find_nsk(), d).find_nsk())
+
