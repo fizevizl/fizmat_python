@@ -12,10 +12,8 @@ def solve_quadratic():
             messagebox.showerror("Помилка", "a не може бути нулем у квадратному рівнянні.")
             return
 
-        # Обчислення дискримінанта
         D = b**2 - 4*a*c
 
-        # Розв'язання рівняння
         if D > 0:
             root1 = (-b + cmath.sqrt(D)) / (2*a)
             root2 = (-b - cmath.sqrt(D)) / (2*a)
@@ -32,11 +30,9 @@ def solve_quadratic():
     except ValueError:
         messagebox.showerror("Помилка", "Будь ласка, введіть коректні числа.")
 
-# Створення основного вікна
 root = tk.Tk()
 root.title("Розв'язання квадратного рівняння")
 
-# Створення і розміщення віджетів
 label_a = tk.Label(root, text="a:")
 label_a.grid(row=0, column=0, padx=5, pady=5)
 entry_a = tk.Entry(root)
@@ -55,5 +51,4 @@ entry_c.grid(row=2, column=1, padx=5, pady=5)
 solve_button = tk.Button(root, text="Розв'язати", command=solve_quadratic)
 solve_button.grid(row=3, column=0, columnspan=2, pady=10)
 
-# Запуск основного циклу програми
 root.mainloop()
